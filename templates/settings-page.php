@@ -6,14 +6,14 @@ if(!defined("ABSPATH")) {
 return
 	/**
 	 * @param array $data
-	 *
 	 * @return string
 	 */
 	function(array $data): string {
 		ob_start();
 		?>
         <div class="wrap">
-            <h1><img src="<?=$data["logoUrl"]?>" id="wc-sort-settings-logo" alt=""/> |
+            <h1><img src="<?
+				echo esc_html($data["logoUrl"]) ?>" id="wc-sort-settings-logo" alt=""/> |
 				<?php
 				echo esc_html($data["title"])
 				?>
