@@ -12,7 +12,7 @@ return
 		ob_start();
 		?>
         <div class="wrap">
-            <h1><img src="<?
+            <h1><img src="<?php
 				echo esc_html($data["logoUrl"]) ?>" id="wc-sort-settings-logo" alt=""/> |
 				<?php
 				echo esc_html($data["title"])

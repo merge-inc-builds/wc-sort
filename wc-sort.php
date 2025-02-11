@@ -40,7 +40,7 @@ use MergeInc\WcSort\WordPress\Controller\AddTrendingOptionInCategorySortingOptio
  * Author URI: https://sort.joinmerge.gr
  * Description: A WooCommerce extension designed to enhance your store's product sorting and ranking capabilities. Sort
  * products dynamically using sales data, trends, and other criteria to optimize customer experience and maximize conversions.
- * Version: 5.3.1
+ * Version: 5.3.2
  * Author: Merge Inc
  * GitHub Plugin URI: https://github.com/merge-inc-builds/sort
  * Plugin URI: https://sort.joinmerge.gr/sort
@@ -60,7 +60,7 @@ final class Sort {
 	/**
 	 *
 	 */
-	public const VERSION = "5.3.1";
+	public const VERSION = "5.3.2";
 
 	/*
 	 *
