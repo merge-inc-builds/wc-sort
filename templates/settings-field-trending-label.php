@@ -2,40 +2,30 @@
 
 use MergeInc\WcSort\WordPress\Constants;
 
-if ( ! defined( 'ABSPATH' ) ) {
+if(!defined("ABSPATH")) {
 	exit;
 }
 
-return /**
+return
+	/**
 	 * @param array $data
 	 *
 	 * @return string
 	 */
-	function ( array $data ): string {
+	function(array $data): string {
 		ob_start();
 		?>
-		<input
-				type="text"
-				class="regular-text"
-				id="
-				<?php
-				echo esc_html( Constants::SETTINGS_FIELD_TRENDING_LABEL )
-				?>
-				"
-				name="
-				<?php
-				echo esc_html( Constants::SETTINGS_FIELD_TRENDING_LABEL )
-				?>
-				"
-				value="
-				<?php
-				echo esc_html( $data['value'] )
-				?>
-				"
+        <input
+                type="text"
+                class="regular-text"
+                id="<?php
+				echo esc_html(Constants::SETTINGS_FIELD_TRENDING_LABEL) ?>"
+                name="<?php
+				echo esc_html(Constants::SETTINGS_FIELD_TRENDING_LABEL) ?>"
+                value="<?php
+				echo esc_html($data["value"]) ?>"
 			<?php
-			echo esc_html( ! $data['freemiumActivated'] ? 'disabled="disabled"' : '' )
-			?>
-			/>
+			echo esc_html(!$data["freemiumActivated"] ? "disabled=\"disabled\"" : "") ?>/>
 		<?php
 		return ob_get_clean();
 	};

@@ -1,21 +1,19 @@
 <?php
-if ( ! defined( 'ABSPATH' ) ) {
+if(!defined("ABSPATH")) {
 	exit;
 }
 
-return /**
+return
+	/**
 	 * @param array $data
 	 *
 	 * @return string
 	 */
-	function ( array $data ): string {
+	function(array $data): string {
 		ob_start();
 		?>
-		<span class="wc-sort-tooltip" data-tooltip="
-		<?php
-		echo esc_html( $data['text'] )
-		?>
-		">?</span>
+        <span class="wc-sort-tooltip" data-tooltip="<?php
+		echo esc_html($data["text"]) ?>">?</span>
 		<?php
 		return ob_get_clean();
 	};
