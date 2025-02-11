@@ -1,0 +1,64 @@
+#wc-sort-frontend-admin {
+	margin-left: 170px;
+	padding: 10px;
+}
+
+@media screen and (max-width: 960px) {
+	#wc-sort-frontend-admin {
+		margin-left: 50px;
+	}
+}
+
+.notice.wc-sort-notice-styled {
+	border-left-color: #2FD3B9;
+	background: rgb(255, 255, 255);
+}
+
+.wc-sort-tooltip {
+	cursor: pointer;
+	border-bottom: 1px dotted #000;
+}
+
+.wc-sort-tooltip:hover::after {
+	content: attr(data-tooltip);
+	display: block;
+	background: #2FD3B9;
+	color: #000;
+	padding: 5px;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 1000;
+}
+
+#wc-sort-settings-logo {
+	width: 32px;
+	border-radius: 5px;
+	position: relative;
+	top: 8px;
+	margin-right: 3px;
+}
+
+.wc-sort-notice-hidden {
+	display: none;
+}
+
+#wc-sort-notice-logo {
+	width: 16px;
+	position: relative;
+	top: 4px;
+}
+
+#wc-sort-paragraph-imitator {
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+#wc-sort-message-title {
+	margin-bottom: 1em;
+}
+
+#wc-sort-freemium-notice {
+	font-size: .9em;
+	font-weight: normal;
+	padding: 0;
+}
